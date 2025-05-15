@@ -1,0 +1,8 @@
+{
+  "entryFileName": "types",
+  "entryPoints": ["./index.ts"],
+  "out": "../../docs/docs/types",
+  "tsconfig": "../tsconfig.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "readme": "none"
+}

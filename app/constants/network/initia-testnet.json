@@ -1,0 +1,40 @@
+{
+  "chainId": "initiation-2",
+  "displayName": "Initia testnet",
+  "networkType": "testnet",
+
+  "registry": "https://registry.testnet.initia.xyz",
+  "swaplist": "https://list.testnet.initia.xyz/swaplist.json",
+
+  "rpc": "https://rpc.testnet.initia.xyz",
+  "rest": "https://rest.testnet.initia.xyz",
+  "api": "https://api.testnet.initia.xyz",
+
+  "ws": "wss://rpc.testnet.initia.xyz/websocket",
+  "bridge": "https://bridge.testnet.initia.xyz",
+  "explorer": "https://scan.testnet.initia.xyz",
+  "logo": "https://assets.initia.xyz/images/chains/Initia.webp",
+
+  "modules": {
+    "usernames": "0x42cd8467b1c86e59bf319e5664a09b6b5840bb3fac64f5ce690b5041c530565a",
+    "dex_utils": "0x42cd8467b1c86e59bf319e5664a09b6b5840bb3fac64f5ce690b5041c530565a",
+    "swap_transfer": "0x42cd8467b1c86e59bf319e5664a09b6b5840bb3fac64f5ce690b5041c530565a",
+    "lock_stake": "0xe55cc823efb411bed5eed25aca5277229a54c62ab3769005f86cc44bc0c0e5ab"
+  },
+
+  "assets": "https://assets.initia.xyz",
+  "faucetAPI": "https://faucet-api.testnet.initia.xyz",
+  "usernamesAPI": "https://usernames-api.testnet.initia.xyz",
+  "compiler": "https://compiler.testnet.initia.xyz",
+  "vip": "https://vip-api.testnet.initia.xyz",
+  "dashboard": "https://dashboard-api.testnet.initia.xyz",
+  "dex": "https://dex-api.testnet.initia.xyz",
+
+  "currency": {
+    "ticker": "INIT",
+    "denom": "uinit",
+    "decimals": 6
+  },
+  "gasPrice": 0.15,
+  "lockDurationType": "hour"
+}

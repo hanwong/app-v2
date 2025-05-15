@@ -1,0 +1,10 @@
+main = ".open-next/worker.js"
+compatibility_date = "2025-05-08"
+compatibility_flags = ["nodejs_compat"]
+assets = { directory = ".open-next/assets", binding = "ASSETS" }
+
+[env.staging]
+name = "app-v2-staging"
+
+[env.prod-mainnet]
+name = "app-v2-prod-mainnet"

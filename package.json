@@ -1,0 +1,39 @@
+{
+  "scripts": {
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "prepare": "husky",
+    "app:dev": "pnpm --filter @initia-app dev",
+    "docs:dev": "pnpm --filter docs start",
+    "docs:types": "typedoc --options app/types/typedoc.json",
+    "docs:hooks": "typedoc --options app/hooks/typedoc.json",
+    "docs:queries": "typedoc --options app/queries/typedoc.json",
+    "docs:constants": "typedoc --options app/constants/typedoc.json",
+    "docs:all": "pnpm docs:types && pnpm docs:hooks && pnpm docs:queries && pnpm docs:constants"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.26.0",
+    "@initia/eslint-config-react-app": "^1.0.2",
+    "@tanstack/eslint-plugin-query": "^5.74.7",
+    "@types/node": "^22.15.17",
+    "docusaurus-plugin-typedoc": "^1.4.0",
+    "eslint": "^9.26.0",
+    "eslint-config-mantine": "^4.0.3",
+    "eslint-config-next": "15.3.2",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-perfectionist": "^4.12.3",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-storybook": "^0.12.0",
+    "globals": "^16.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.5.3",
+    "typedoc": "^0.28.4",
+    "typedoc-plugin-markdown": "^4.6.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1"
+  }
+}

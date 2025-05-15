@@ -1,0 +1,8 @@
+{
+  "entryFileName": "constants",
+  "entryPoints": ["./index.ts"],
+  "out": "../../docs/docs/constants",
+  "tsconfig": "../tsconfig.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "readme": "none"
+}

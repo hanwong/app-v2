@@ -1,0 +1,85 @@
+@import url("@initia/react-app-shell/dist/index.css");
+
+@font-face {
+  font-family: "Pilat Wide";
+  font-weight: 500;
+  font-display: swap;
+  src: url("https://assets.initia.xyz/fonts/PilatWide-Book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Pilat Wide";
+  font-weight: 600;
+  font-display: swap;
+  src: url("https://assets.initia.xyz/fonts/PilatWide-Demi.woff2") format("woff2");
+}
+
+:root[data-mantine-color-scheme="dark"] {
+  /* Color Scheme */
+  --mantine-color-gray-0: var(--gray-0);
+  --mantine-color-gray-1: var(--gray-1);
+  --mantine-color-gray-2: var(--gray-2);
+  --mantine-color-gray-3: var(--gray-3);
+  --mantine-color-gray-4: var(--gray-4);
+  --mantine-color-gray-5: var(--gray-5);
+  --mantine-color-gray-6: var(--gray-6);
+  --mantine-color-gray-7: var(--gray-7);
+  --mantine-color-gray-8: var(--gray-8);
+  --mantine-color-gray-9: var(--gray-9);
+
+  --mantine-color-primary: var(--primary);
+  --mantine-color-primary-dark: var(--primary-dark);
+  --mantine-color-primary-background: var(--primary-background);
+
+  --mantine-color-accent-lighter: var(--accent-lighter);
+  --mantine-color-accent-light: var(--accent-light);
+  --mantine-color-accent: var(--accent);
+  --mantine-color-accent-dark: var(--accent-dark);
+  --mantine-color-accent-background: var(--accent-background);
+
+  --mantine-color-warning-lighter: var(--warning-lighter);
+  --mantine-color-warning-light: var(--warning-light);
+  --mantine-color-warning: var(--warning);
+  --mantine-color-warning-dark: var(--warning-dark);
+  --mantine-color-warning-background: var(--warning-background);
+
+  --mantine-color-error-lighter: var(--error-lighter);
+  --mantine-color-error-light: var(--error-light);
+  --mantine-color-error: var(--error);
+  --mantine-color-error-dark: var(--error-dark);
+  --mantine-color-error-background: var(--error-background);
+
+  --mantine-color-success-lighter: var(--success-lighter);
+  --mantine-color-success-light: var(--success-light);
+  --mantine-color-success: var(--success);
+  --mantine-color-success-dark: var(--success-dark);
+  --mantine-color-success-background: var(--success-background);
+
+  --mantine-color-pink-lighter: var(--pink-lighter);
+  --mantine-color-pink-light: var(--pink-light);
+  --mantine-color-pink: var(--pink);
+  --mantine-color-pink-dark: var(--pink-dark);
+  --mantine-color-pink-background: var(--pink-background);
+
+  --mantine-color-purple-lighter: var(--purple-lighter);
+  --mantine-color-purple-light: var(--purple-light);
+  --mantine-color-purple: var(--purple);
+  --mantine-color-purple-dark: var(--purple-dark);
+  --mantine-color-purple-background: var(--purple-background);
+
+  --mantine-color-blue-lighter: var(--blue-lighter);
+  --mantine-color-blue-light: var(--blue-light);
+  --mantine-color-blue: var(--blue);
+  --mantine-color-blue-dark: var(--blue-dark);
+  --mantine-color-blue-background: var(--blue-background);
+
+  --mantine-color-orange-lighter: var(--orange-lighter);
+  --mantine-color-orange-light: var(--orange-light);
+  --mantine-color-orange: var(--orange);
+  --mantine-color-orange-dark: var(--orange-dark);
+  --mantine-color-orange-background: var(--orange-background);
+
+  /* Default */
+  --mantine-color-body: var(--mantine-color-gray-9);
+  --mantine-color-text: var(--mantine-color-gray-0);
+}
