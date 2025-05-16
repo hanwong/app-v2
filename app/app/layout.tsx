@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 import type { ReactNode } from "react"
 
 import { AppShellContainer } from "@/components/layout/app-shell-container"
-import { Providers } from "@/providers/main"
+import { Providers } from "@/contexts/main"
 import { pilatWideSans } from "@/styles/fonts"
 
 const title = "Initia App"

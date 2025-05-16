@@ -5,7 +5,7 @@ import type { PropsWithChildren } from "react"
 import { AppShell, Burger, Group } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 
-import { useInitiaRegistry } from "@/queries"
+import { useInitiaRegistry } from "@/data/queries"
 
 export function AppShellContainer({ children }: PropsWithChildren) {
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure()
@@ -27,7 +27,7 @@ export function AppShellContainer({ children }: PropsWithChildren) {
         <Group h="100%" px="md">
           <Burger hiddenFrom="sm" opened={mobileOpened} size="sm" onClick={toggleMobile} />
           <Burger opened={desktopOpened} size="sm" visibleFrom="sm" onClick={toggleDesktop} />
-          {registry?.[0].chain_id}
+          {registry?.[0].chainId}
         </Group>
       </AppShell.Header>
 

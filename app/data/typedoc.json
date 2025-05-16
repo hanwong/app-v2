@@ -1,0 +1,8 @@
+{
+  "entryFileName": "data",
+  "entryPoints": ["./queries/index.ts"],
+  "out": "../../docs/docs/data",
+  "tsconfig": "../tsconfig.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "readme": "none"
+}

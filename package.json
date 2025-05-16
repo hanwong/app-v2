@@ -8,9 +8,9 @@
     "docs:dev": "pnpm --filter docs start",
     "docs:types": "typedoc --options app/types/typedoc.json",
     "docs:hooks": "typedoc --options app/hooks/typedoc.json",
-    "docs:queries": "typedoc --options app/queries/typedoc.json",
+    "docs:data": "typedoc --options app/data/typedoc.json",
     "docs:constants": "typedoc --options app/constants/typedoc.json",
-    "docs:all": "pnpm docs:types && pnpm docs:hooks && pnpm docs:queries && pnpm docs:constants"
+    "docs:all": "pnpm docs:types && pnpm docs:hooks && pnpm docs:data && pnpm docs:constants"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",

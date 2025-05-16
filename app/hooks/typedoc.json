@@ -1,6 +1,6 @@
 {
   "entryFileName": "hooks",
-  "entryPoints": ["./index.ts"],
+  "entryPoints": ["./network/index.ts", "./ui/index.ts"],
   "out": "../../docs/docs/hooks",
   "tsconfig": "../tsconfig.json",
   "plugin": ["typedoc-plugin-markdown"],

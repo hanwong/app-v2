@@ -6,7 +6,7 @@ import type { PropsWithChildren, ReactNode } from "react"
 import { context, loadScript } from "@initia/react-wallet-widget/ssr"
 import { useEffect, useState } from "react"
 
-import { useL1InfoByNetworkType } from "@/hooks"
+import { network } from "@/constants"
 
 import pkg from "../package.json"
 
@@ -43,6 +43,5 @@ const WalletWidgetProvider = ({ children, ...config }: PropsWithChildren<WidgetC
 }
 
 export const WalletProvider = ({ children }: { children: ReactNode }) => {
-  const { configs } = useL1InfoByNetworkType()
-  return <WalletWidgetProvider {...configs}>{children}</WalletWidgetProvider>
+  return <WalletWidgetProvider {...network}>{children}</WalletWidgetProvider>
 }
