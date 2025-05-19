@@ -1,6 +1,6 @@
 import { Welcome } from "@/components/ui/welcome"
 
-export default function Home() {
+export default async function Home() {
   return (
     <div>
       <Welcome />

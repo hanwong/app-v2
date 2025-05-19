@@ -1,7 +1,6 @@
 import js from "@eslint/js"
 import initia from "@initia/eslint-config-react-app"
 import { flatConfig as next } from "@next/eslint-plugin-next"
-import mantine from "eslint-config-mantine"
 import perfectionist from "eslint-plugin-perfectionist"
 import react from "eslint-plugin-react"
 import storybook from "eslint-plugin-storybook"
@@ -10,7 +9,6 @@ import globals from "globals"
 
 export default defineConfig([
   ...initia,
-  ...mantine,
   globalIgnores([
     "**/.next",
     "!**/.storybook",

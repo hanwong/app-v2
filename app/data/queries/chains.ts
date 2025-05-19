@@ -22,7 +22,7 @@ function getPrimaryEndpoint(endpoints?: SecureEndpoint[]) {
   return url
 }
 
-function normalizeChain(chain: Chain) {
+function normalizeChain(chain: Chain): NormalizedChain {
   const { apis, chain_id: chainId, chain_name, logo_URIs, metadata, pretty_name } = chain
   const name = pretty_name || chain_name
   const logoUrl = logo_URIs?.png ?? ""
@@ -34,20 +34,21 @@ function normalizeChain(chain: Chain) {
   return { ...chain, chainId, indexerUrl, jsonRpcUrl, logoUrl, name, restUrl, rpcUrl }
 }
 
-export function useInitiaRegistry() {
-  const registryUrl = network.registryUrl
-  const defaultChainId = network.chainId
-
-  const { data } = useQuery({
-    queryFn: () => ky.create({ prefixUrl: registryUrl }).get("chains.json").json<Chain[]>(),
-    queryKey: chainQueryKeys.list(registryUrl!).queryKey,
-    select: (chains) => {
+export const chainQueryOptions = {
+  registry: {
+    queryFn: () => ky.create({ prefixUrl: network.registryUrl }).get("chains.json").json<Chain[]>(),
+    queryKey: chainQueryKeys.list(network.registryUrl).queryKey,
+    select: (chains: Chain[]) => {
       return chains
         .map(normalizeChain)
-        .toSorted(descend((chain) => chain.chainId === defaultChainId))
+        .toSorted(descend((chain) => chain.chainId === network.chainId))
     },
     staleTime: STALE_TIMES.MINUTE,
-  })
+  },
+}
+
+export function useInitiaRegistry() {
+  const { data } = useQuery(chainQueryOptions.registry)
   return data
 }
 

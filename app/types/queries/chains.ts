@@ -5,7 +5,7 @@ import { z } from "zod"
 export const zNormalizedChain = z.object({
   chainId: z.string(),
   indexerUrl: z.string(),
-  jsonRpcUrl: z.string(),
+  jsonRpcUrl: z.string().optional(),
   logoUrl: z.string(),
   name: z.string(),
   restUrl: z.string(),
