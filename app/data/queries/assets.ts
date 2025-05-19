@@ -1,7 +1,7 @@
 import type { Asset, AssetList } from "@initia/initia-registry-types"
 
 import { createQueryKeys } from "@lukemorales/query-key-factory"
-import { useQuery, useQueryClient } from "@tanstack/react-query"
+import { useQueryClient, useSuspenseQuery } from "@tanstack/react-query"
 import ky from "ky"
 import { head } from "ramda"
 
@@ -33,7 +33,7 @@ function normalizeAsset(asset: Asset): NormalizedAsset {
 export function useAssets(chain?: NormalizedChain) {
   const assetlistUrl = chain?.metadata?.assetlist
   const queryClient = useQueryClient()
-  const { data } = useQuery({
+  const { data } = useSuspenseQuery({
     queryFn: async () => {
       if (!assetlistUrl) {
         return { assets: [] as Asset[] }

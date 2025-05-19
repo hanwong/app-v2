@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query"
+import { useSuspenseQuery } from "@tanstack/react-query"
 
 import type { NormalizedAsset } from "@/types/queries/assets"
 import type { Metadata, NormalizedToken } from "@/types/queries/tokens"
@@ -27,7 +27,7 @@ export function useTokenInfo(denom: string) {
   const layer1 = useLayer1()
   const assets = useLayer1Assets()
 
-  const { data } = useQuery({
+  const { data } = useSuspenseQuery({
     queryFn: async () => {
       // assetlist
       const asset = assets?.find((asset) => asset.base === denom)

@@ -1,7 +1,7 @@
 import type { Chain, SecureEndpoint } from "@initia/initia-registry-types"
 
 import { createQueryKeys } from "@lukemorales/query-key-factory"
-import { useQuery } from "@tanstack/react-query"
+import { useSuspenseQuery } from "@tanstack/react-query"
 import ky from "ky"
 import { descend, path } from "ramda"
 
@@ -48,7 +48,7 @@ export const chainQueryOptions = {
 }
 
 export function useInitiaRegistry() {
-  const { data } = useQuery(chainQueryOptions.registry)
+  const { data } = useSuspenseQuery(chainQueryOptions.registry)
   return data
 }
 
