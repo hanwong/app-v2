@@ -5,6 +5,8 @@ import { useQuery } from "@tanstack/react-query"
 import ky from "ky"
 import { descend, path } from "ramda"
 
+import type { NormalizedChain } from "@/types/queries/chains"
+
 import { network } from "@/constants"
 import { STALE_TIMES } from "@/data/utils"
 
@@ -47,4 +49,13 @@ export function useInitiaRegistry() {
     staleTime: STALE_TIMES.MINUTE,
   })
   return data
+}
+
+export function useLayer1() {
+  const chains = useInitiaRegistry()
+  const chain = chains?.find((chain) => chain.metadata?.is_l1)
+  if (!chain) {
+    throw new Error("Layer 1 not found")
+  }
+  return chain as NormalizedChain
 }

@@ -77,6 +77,9 @@ importers:
 
   app:
     dependencies:
+      '@cosmjs/encoding':
+        specifier: ^0.33.1
+        version: 0.33.1
       '@cosmjs/stargate':
         specifier: ^0.33.1
         version: 0.33.1
@@ -119,6 +122,9 @@ importers:
       '@next/third-parties':
         specifier: ^15.3.2
         version: 15.3.2(next@15.3.2(@babel/core@7.27.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+      '@noble/hashes':
+        specifier: ^1.8.0
+        version: 1.8.0
       '@opennextjs/aws':
         specifier: ^3.6.1
         version: 3.6.1

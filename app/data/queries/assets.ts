@@ -1,13 +1,14 @@
 import type { Asset, AssetList } from "@initia/initia-registry-types"
 
 import { createQueryKeys } from "@lukemorales/query-key-factory"
-import { useQueryClient, useSuspenseQuery } from "@tanstack/react-query"
+import { useQuery, useQueryClient } from "@tanstack/react-query"
 import ky from "ky"
 import { head } from "ramda"
 
 import type { NormalizedAsset } from "@/types/queries/assets"
 import type { NormalizedChain } from "@/types/queries/chains"
 
+import { useLayer1 } from "@/data/queries/chains"
 import { STALE_TIMES } from "@/data/utils"
 
 export const assetQueryKeys = createQueryKeys("@initia-app/queries:asset", {
@@ -32,7 +33,7 @@ function normalizeAsset(asset: Asset): NormalizedAsset {
 export function useAssets(chain?: NormalizedChain) {
   const assetlistUrl = chain?.metadata?.assetlist
   const queryClient = useQueryClient()
-  const { data } = useSuspenseQuery({
+  const { data } = useQuery({
     queryFn: async () => {
       if (!assetlistUrl) {
         return { assets: [] as Asset[] }
@@ -50,7 +51,13 @@ export function useAssets(chain?: NormalizedChain) {
       }
       return normalizedAssets
     },
-    staleTime: STALE_TIMES.MINUTE,
+    staleTime: STALE_TIMES.INFINITY,
   })
   return data
+}
+
+export function useLayer1Assets() {
+  const layer1 = useLayer1()
+  const assets = useAssets(layer1)
+  return assets
 }

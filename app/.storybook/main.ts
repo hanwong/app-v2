@@ -1,16 +1,16 @@
 import type { StorybookConfig } from "@storybook/nextjs"
 
 const config: StorybookConfig = {
+  addons: ["storybook-dark-mode"],
   core: {
-    disableWhatsNewNotifications: true,
     disableTelemetry: true,
+    disableWhatsNewNotifications: true,
     enableCrashReports: false,
   },
-  stories: ["../components/**/*.(stories|story).@(js|jsx|ts|tsx)"],
-  addons: ["storybook-dark-mode"],
   framework: {
     name: "@storybook/nextjs",
     options: {},
   },
+  stories: ["../components/**/*.(stories|story).@(js|jsx|ts|tsx)"],
 }
 export default config
