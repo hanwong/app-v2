@@ -5,12 +5,11 @@ import type { PropsWithChildren } from "react"
 import { AppShell, Burger, Group } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 
-import { useLayer1 } from "@/data/queries"
+import { ConnectButton } from "@/components/ui/connect-button"
 
 export function AppShellContainer({ children }: PropsWithChildren) {
   const [mobileOpened, { toggle: toggleMobile }] = useDisclosure()
   const [desktopOpened, { toggle: toggleDesktop }] = useDisclosure(true)
-  const layer1 = useLayer1()
 
   return (
     <AppShell
@@ -27,7 +26,7 @@ export function AppShellContainer({ children }: PropsWithChildren) {
         <Group h="100%" px="md">
           <Burger hiddenFrom="sm" opened={mobileOpened} size="sm" onClick={toggleMobile} />
           <Burger opened={desktopOpened} size="sm" visibleFrom="sm" onClick={toggleDesktop} />
-          {layer1.chainId}
+          <ConnectButton />
         </Group>
       </AppShell.Header>
 
