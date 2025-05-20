@@ -8,4 +8,4 @@
 
 > **Network** = `z.infer`\<*typeof* [`zNetwork`](../variables/zNetwork.md)\>
 
-Defined in: [app/types/network.ts:48](https://github.com/hanwong/app-v2/blob/b6cc29462bca0bededdcec342d091f91e17e428a/app/types/network.ts#L48)
+Defined in: [app/types/network.ts:48](https://github.com/hanwong/app-v2/blob/087f9ea496ced31d9a3b187baa11cd5456705527/app/types/network.ts#L48)

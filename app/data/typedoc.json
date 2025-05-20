@@ -4,7 +4,9 @@
     "./msgs/index.ts",
     "./network/index.ts",
     "./queries/index.ts",
-    "./utils/index.ts"
+    "./utils/index.ts",
+    "./views/index.ts",
+    "./resources/index.ts"
   ],
   "out": "../../docs/docs/data",
   "tsconfig": "../tsconfig.json",

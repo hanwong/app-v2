@@ -2,13 +2,13 @@
 
 ***
 
-[@initia-app](../../data.md) / [queries](../data.md) / useTokenInfo
+[@initia-app](../../data.md) / [resources](../data.md) / useTokenInfo
 
 # Function: useTokenInfo()
 
 > **useTokenInfo**(`denom`): `object`
 
-Defined in: [app/data/queries/tokens.ts:26](https://github.com/hanwong/app-v2/blob/b6cc29462bca0bededdcec342d091f91e17e428a/app/data/queries/tokens.ts#L26)
+Defined in: [app/data/resources/tokens.ts:26](https://github.com/hanwong/app-v2/blob/087f9ea496ced31d9a3b187baa11cd5456705527/app/data/resources/tokens.ts#L26)
 
 ## Parameters
 

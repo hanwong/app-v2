@@ -8,7 +8,7 @@
 
 > `const` **network**: `object`
 
-Defined in: [app/constants/network/index.ts:13](https://github.com/hanwong/app-v2/blob/b6cc29462bca0bededdcec342d091f91e17e428a/app/constants/network/index.ts#L13)
+Defined in: [app/constants/network/index.ts:13](https://github.com/hanwong/app-v2/blob/087f9ea496ced31d9a3b187baa11cd5456705527/app/constants/network/index.ts#L13)
 
 ## Type declaration
 

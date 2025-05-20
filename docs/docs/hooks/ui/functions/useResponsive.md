@@ -8,7 +8,7 @@
 
 > **useResponsive**(): `object`
 
-Defined in: [use-responsive.ts:3](https://github.com/hanwong/app-v2/blob/b6cc29462bca0bededdcec342d091f91e17e428a/app/hooks/ui/use-responsive.ts#L3)
+Defined in: [use-responsive.ts:3](https://github.com/hanwong/app-v2/blob/087f9ea496ced31d9a3b187baa11cd5456705527/app/hooks/ui/use-responsive.ts#L3)
 
 ## Returns
 
