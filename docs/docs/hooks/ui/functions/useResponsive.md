@@ -1,14 +1,14 @@
-[**@initia-app**](../hooks.md)
+[**@initia-app**](../../hooks.md)
 
 ***
 
-[@initia-app](../hooks.md) / useResponsive
+[@initia-app](../../hooks.md) / [ui](../hooks.md) / useResponsive
 
 # Function: useResponsive()
 
 > **useResponsive**(): `object`
 
-Defined in: [app/hooks/use-responsive.ts:3](https://github.com/hanwong/app-v2/blob/81e68e88090ddc2ab26b9b4b48b4c48725303c75/app/hooks/use-responsive.ts#L3)
+Defined in: [use-responsive.ts:3](https://github.com/hanwong/app-v2/blob/b6cc29462bca0bededdcec342d091f91e17e428a/app/hooks/ui/use-responsive.ts#L3)
 
 ## Returns
 

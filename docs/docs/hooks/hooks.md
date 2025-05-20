@@ -4,7 +4,7 @@
 
 # @initia-app
 
-## Functions
+## Modules
 
-- [useL1InfoByNetworkType](functions/useL1InfoByNetworkType.md)
-- [useResponsive](functions/useResponsive.md)
+- [network](network/hooks.md)
+- [ui](ui/hooks.md)

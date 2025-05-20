@@ -1,6 +1,11 @@
 {
   "entryFileName": "data",
-  "entryPoints": ["./queries/index.ts"],
+  "entryPoints": [
+    "./msgs/index.ts",
+    "./network/index.ts",
+    "./queries/index.ts",
+    "./utils/index.ts"
+  ],
   "out": "../../docs/docs/data",
   "tsconfig": "../tsconfig.json",
   "plugin": ["typedoc-plugin-markdown"],

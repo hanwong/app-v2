@@ -8,4 +8,4 @@
 
 > **ConsensusAddr** = `z.infer`\<*typeof* [`zConsensusAddr`](../variables/zConsensusAddr.md)\>
 
-Defined in: [address.ts:42](https://github.com/hanwong/app-v2/blob/81e68e88090ddc2ab26b9b4b48b4c48725303c75/app/types/address.ts#L42)
+Defined in: [app/types/address.ts:42](https://github.com/hanwong/app-v2/blob/b6cc29462bca0bededdcec342d091f91e17e428a/app/types/address.ts#L42)

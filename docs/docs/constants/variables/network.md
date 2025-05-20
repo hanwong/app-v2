@@ -6,6 +6,164 @@
 
 # Variable: network
 
-> `const` **network**: `undefined` \| \{ `api`: `string`; `assets`: `string`; `bridge`: `string`; `chainId`: `string`; `compiler`: `string`; `currency`: \{ `decimals`: `number`; `denom`: `string`; `ticker`: `string`; \}; `dashboard`: `string`; `dex`: `string`; `displayName`: `string`; `explorer`: `string`; `faucetAPI`: `string`; `gasPrice`: `number`; `lockDurationType`: `string`; `logo`: `string`; `modules`: \{ `dex_utils`: `string`; `lock_stake`: `string`; `swap_transfer`: `string`; `usernames`: `string`; \}; `networkType`: `string`; `registry`: `string`; `rest`: `string`; `rpc`: `string`; `swaplist`: `string`; `usernamesAPI`: `string`; `vip`: `string`; `ws`: `string`; \}
+> `const` **network**: `object`
 
-Defined in: [index.ts:11](https://github.com/hanwong/app-v2/blob/81e68e88090ddc2ab26b9b4b48b4c48725303c75/app/constants/network/index.ts#L11)
+Defined in: [app/constants/network/index.ts:13](https://github.com/hanwong/app-v2/blob/b6cc29462bca0bededdcec342d091f91e17e428a/app/constants/network/index.ts#L13)
+
+## Type declaration
+
+### apiUrl
+
+> **apiUrl**: `string`
+
+### assetsUrl
+
+> **assetsUrl**: `string`
+
+### bridgeUrl
+
+> **bridgeUrl**: `string`
+
+### chainId
+
+> **chainId**: `string`
+
+### compilerUrl
+
+> **compilerUrl**: `string`
+
+### currency
+
+> **currency**: `object`
+
+#### currency.decimals
+
+> **decimals**: `number`
+
+#### currency.denom
+
+> **denom**: `string`
+
+#### currency.ticker
+
+> **ticker**: `string`
+
+### dashboardUrl
+
+> **dashboardUrl**: `string`
+
+### displayName
+
+> **displayName**: `string`
+
+### explorerUrl
+
+> **explorerUrl**: `string`
+
+### faucetApiUrl
+
+> **faucetApiUrl**: `string`
+
+### gasPrice
+
+> **gasPrice**: `number`
+
+### lockDurationType
+
+> **lockDurationType**: `string`
+
+### logo
+
+> **logo**: `string`
+
+### moduleNames
+
+> **moduleNames**: `object`
+
+#### moduleNames.dex
+
+> **dex**: `string`
+
+#### moduleNames.dexUtils
+
+> **dexUtils**: `string`
+
+#### moduleNames.minitswapQuery
+
+> **minitswapQuery**: `string`
+
+#### moduleNames.object
+
+> **object**: `string`
+
+#### moduleNames.stableswap
+
+> **stableswap**: `string`
+
+#### moduleNames.usernames
+
+> **usernames**: `string`
+
+#### moduleNames.vip
+
+> **vip**: `string`
+
+#### moduleNames.weightVote
+
+> **weightVote**: `string`
+
+### modules
+
+> **modules**: `object`
+
+#### modules.dex
+
+> **dex**: `string`
+
+#### modules.dex\_utils
+
+> **dex\_utils**: `string`
+
+#### modules.lock\_stake
+
+> **lock\_stake**: `string`
+
+#### modules.swap\_transfer
+
+> **swap\_transfer**: `string`
+
+#### modules.usernames
+
+> **usernames**: `string`
+
+### networkType
+
+> **networkType**: `string`
+
+### registryUrl
+
+> **registryUrl**: `string`
+
+### restUrl
+
+> **restUrl**: `string`
+
+### rpcUrl
+
+> **rpcUrl**: `string`
+
+### swaplistUrl
+
+> **swaplistUrl**: `string`
+
+### usernamesApiUrl
+
+> **usernamesApiUrl**: `string`
+
+### vipUrl
+
+> **vipUrl**: `string`
+
+### wsUrl
+
+> **wsUrl**: `string`

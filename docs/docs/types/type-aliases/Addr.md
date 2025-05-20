@@ -8,4 +8,4 @@
 
 > **Addr** = `z.infer`\<*typeof* [`zAddr`](../variables/zAddr.md)\>
 
-Defined in: [address.ts:36](https://github.com/hanwong/app-v2/blob/81e68e88090ddc2ab26b9b4b48b4c48725303c75/app/types/address.ts#L36)
+Defined in: [app/types/address.ts:36](https://github.com/hanwong/app-v2/blob/b6cc29462bca0bededdcec342d091f91e17e428a/app/types/address.ts#L36)
